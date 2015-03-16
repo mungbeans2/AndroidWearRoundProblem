@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity" tools:deviceIds="wear_round">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="86dp"
+        android:background="#50000000"
+        android:layout_centerHorizontal="true"
+        android:alpha="1.0">
+
+        <TextView android:id="@+id/text" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" android:text="@string/hello_round" />
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon"
+            android:contentDescription='android:contentDescription="@string/description"'
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/nameOrNumberTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Wearable.Small"
+            android:text="WIRELESS CALLER"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fffcfff6"
+            android:textSize="15sp"
+            android:layout_marginRight="4dp"
+            android:layout_above="@+id/cityAndStateTextView"
+            android:layout_centerHorizontal="true"
+            android:elegantTextHeight="true" />
+
+        <TextView
+            android:id="@+id/cityAndStateTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Wearable.Small"
+            android:text="Seattle, WA"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:textColor="#fffffdf7"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
